@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UC Challenge</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script id="uc-cmp" src="./script.js"></script>
+    <script
+      id="usercentrics-cmp"
+      type="text/plain"
+      src="https://web.cmp.usercentrics.eu/ui/loader.js"
+      data-settings-id="M2jj2XlU6"
+      async
+    ></script>
+    <script id="counter" type="text/plain">
+      var counter = 0;
+      setInterval(() => {
+          counter++;
+          document.getElementById('timer-value').innerHTML = counter;
+      }, 1000);
+    </script>
+  </head>
+  <body>
+    <div class="cmp">
+      <div class="title">Usercentrics Test CMP</div>
+      <div>
+        Timer:
+        <div id="timer-value"></div>
+      </div>
+      <div class="button-container">
+        <button>Unblock All</button>
+        <button>Block All</button>
+      </div>
+    </div>
+  </body>
+</html>
